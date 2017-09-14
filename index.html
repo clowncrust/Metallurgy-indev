@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="interface.css" />
+	</head>
+	<body>
+		=== RESOURCES === <br/><br/>
+		$<span id="cash">0</span>
+		<br/><br/>
+		<button onclick="Click(1)">Mine</button> 
+		<br/> Coal: <span id="coal">0</span> 
+			Coal/Second: <span id="coalps">0</span> 
+			Coal/Click: <span id="coalpc">1</span> 
+			Sells for: $2 
+			<button onclick="sellcoal()">Sell x<span id="csnumber">1</span> </button> 
+			<button onclick="coalsellup()">+</button> 
+			<button onclick="coalselldown()">-</button> 
+			
+		<br/> Silicon: <span id="silicon">0</span> 
+			Silicon/Second: <span id="siliconps">0</span> 
+			Silicon/Click: <span id="siliconpc">0</span> 
+			Sells for: $1 
+			<button onclick="sellsilicon()">Sell x<span id="ssnumber">1</span> </button> 
+			<button onclick="siliconsellup()">+</button> 
+			<button onclick="siliconselldown()">-</button> 
+			
+		<br/><br/>
+		
+		=== MINE ===<br/><br/>
+		Level: <span id="minelvl">0</span><br/> 
+		<button onclick="UpgradeMine()">Upgrade</button><br/>
+		Cost:<span id="cost"> $60</span><br/>
+		Effect: <span id="eff">Coal/Second + 1</span><br/>
+		"<span id="desc">Enhance your efficiency by purchasing some better gear.</span>"
+		<br/><br/>
+		
+		=== SMELTERY ===<br/><br/>
+		Level: <span id="smeltlvl">0</span><br/> 
+		<button onclick="US()">Upgrade</button><br/>
+		Cost:<span id="scost"> $600</span><br/>
+		Effect: <span id="seff">Can refine Silicon.</span><br/>
+		"<span id="sdesc">Set up a crude melting & pouring apparatus.</span>"
+		<br/><br/>
+		<button onclick="RefineSilicon()"><span id="siliconbutton">[ LOCKED ]</span></button>
+		Cost: <span id="siliconbuttoncost">[ LOCKED ]</span>
+		Refined Silicon: <span id="refinedsilicon">0</span> 
+		Sells for: $150
+			<button onclick="sellrefinedsilicon()">Sell x<span id="rssnumber">1</span> </button> 
+			<button onclick="refinedsiliconsellup()">+</button> 
+			<button onclick="refinedsiliconselldown()">-</button><br/><br/> 
+		
+		=== WAREHOUSE ===<br/>
+		Will be used to manage resources and storage, of which will be limited, in the future.<br/><br/>
+		
+		=== MARKET ===<br/>
+		Will be used to realisticly list and sell resources in the future.<br/><br/>
+		
+		=== INVESTMENTS ===<br/>
+		Will be used to generate income ($) in the future.<br/><br/>
+		
+		=== CHEMISTRY ===<br/>
+		Will be used to make specialized materials in the future.<br/><br/>
+		
+		=== GARAGE ===<br/>
+		Will be used to build products for special upgrades and for sale in the future.<br/><br/>
+		
+		=== ALCHEMY ===<br/>
+		Will be used to convert materials in the future.<br/><br/> 
+		
+		=== ALTAR ===<br/>
+		Will be used for prestige in the future.<br/><br/>
+		
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
