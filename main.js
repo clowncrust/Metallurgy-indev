@@ -172,7 +172,7 @@ function UpgradeMine(){
 		minelvl = minelvl + 1;
 		cash = cash - 200;
 		coal = coal - 25;
-		cost = " $700, 100 Coal, 10 Refined Silicon"
+		cost = " $1000, 100 Coal, 10 Refined Silicon"
 		desc = " Along with silicon, you find another kind of metal, but you don't know what it is yet."
 		eff = " Coal/Second + 1, Silicon/Second + 1, Silicon/Click + 1. Unlocks resource Copper."
 		document.getElementById("cost").innerHTML = cost;
